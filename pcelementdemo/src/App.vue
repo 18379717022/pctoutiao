@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>hh</div>
+    <!--路由出口-->
     <router-view></router-view>
   </div>
 </template>
@@ -10,6 +10,16 @@
 
 export default {
   name: 'app',
+  data() {
+    return {
+      num:6
+    }
+  },
+  methods: {
+    handleChange(value) {
+        console.log(value);
+      }
+  },
 }
 </script>
 
